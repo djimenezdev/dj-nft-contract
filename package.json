@@ -1,0 +1,26 @@
+{
+  "name": "dj-nft-contract",
+  "version": "1.0.0",
+  "description": "building ERC721 Contract utilizing hardhat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compileTest": "nodemon --watch contracts/DJNFT.sol --exec \"npx hardhat compile & npx hardhat test\"",
+    "erc721Script": "npx hardhat run scripts/djnft-erc721script.js --network rinkeby"
+  },
+  "author": "DANIEL JIMENEZ",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "chai": "^4.3.6",
+    "dotenv": "^16.0.0",
+    "ethereum-waffle": "^3.4.4",
+    "ethers": "^5.6.4",
+    "hardhat": "^2.9.3",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.6.0"
+  }
+}
